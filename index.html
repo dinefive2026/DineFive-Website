@@ -14,8 +14,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <script>
-  // Launch: Nov 9, 2026, 12:00 AM Eastern (EST = UTC-5). Preview with ?launch=pre or ?launch=post
-  window.DF_LAUNCH = Date.parse('2026-11-09T00:00:00-05:00');
+  // Launch: Nov 16, 2026, 12:00 AM Eastern (EST = UTC-5). Preview with ?launch=pre or ?launch=post
+  window.DF_LAUNCH = Date.parse('2026-11-16T00:00:00-05:00');
   (function(){
     var q = new URLSearchParams(location.search).get('launch');
     window.DF_FORCE = q === 'pre' || q === 'post' ? q : null;
@@ -367,7 +367,7 @@
 <header id="header">
   <div class="launch-bar" role="region" aria-label="Launch announcement">
     <div class="wrap" data-when="pre">
-      <span><b><span class="lb-long">DineFive launches November 9</span><span class="lb-short">Launching Nov 9</span></b></span>
+      <span><b><span class="lb-long">DineFive launches November 16</span><span class="lb-short">Launching Nov 16</span></b></span>
       <span class="lb-time" data-countdown="short" aria-live="off">&nbsp;</span>
       <a href="#download" class="lb-link lb-long">Get ready →</a>
     </div>
@@ -566,7 +566,7 @@
         <a href="#download" class="btn btn-primary">Gift a meal</a>
       </div>
       <div class="stat-grid reveal d2">
-        <div class="stat"><div class="n" style="font-size:1.05rem"><span data-when="pre">Launching Nov 9</span><span data-when="post">Now Live</span></div><div class="l">Meals gifted</div></div>
+        <div class="stat"><div class="n" style="font-size:1.05rem"><span data-when="pre">Launching Nov 16</span><span data-when="post">Now Live</span></div><div class="l">Meals gifted</div></div>
         <div class="stat"><div class="n" style="font-size:1.05rem">Building Restaurant Partnerships</div><div class="l">Community members helped</div></div>
         <div class="stat"><div class="n" style="font-size:1.05rem">Preparing for Launch</div><div class="l">Restaurant partners</div></div>
         <div class="stat"><div class="n" style="font-size:1.05rem">Growing Our Community</div><div class="l">Cities served</div></div>
@@ -831,7 +831,7 @@
     a.addEventListener('click', () => { document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', false); })
   );
 
-  // Launch countdown: ticks until Nov 9, then flips the page to the "We're live" state
+  // Launch countdown: ticks until Nov 16, then flips the page to the "We're live" state
   const pad = n => String(n).padStart(2, '0');
   const shortEls = document.querySelectorAll('[data-countdown="short"]');
   const tick = () => {
